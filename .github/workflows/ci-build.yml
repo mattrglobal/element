@@ -6,6 +6,7 @@ on:
       tag:
         description: "Image Tag"
         required: true
+        default: "0.1.0"
 
 jobs:
   push_to_registry:
