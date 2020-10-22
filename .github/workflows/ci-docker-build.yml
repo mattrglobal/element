@@ -23,9 +23,9 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          context: $GITHUB_WORKSPACE/packages/${{ matrix.service }}/ 
-          file: $GITHUB_WORKSPACE/packages/${{ matrix.service }}/Dockerfile
+          path: $GITHUB_WORKSPACE/packages/${{ matrix.service }}/ 
+          dockerfile: $GITHUB_WORKSPACE/packages/${{ matrix.service }}/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: ${{ secrets.DOCKER_REPO }}
+          repository: ${{ secrets.DOCKER_ACCOUNT }}/${{ matrix.service }}
           tags: ${{ github.event.inputs.tag }}
