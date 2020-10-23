@@ -44,8 +44,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "NODE_OPTIONS='--max-old-space-size=5190' react-scripts build",
-    "build:standalone": "NODE_OPTIONS='--max-old-space-size=5190' env-cmd -f ./.env.production react-scripts build",
+    "build": "NODE_OPTIONS='--max-old-space-size=5192' react-scripts build",
+    "build:standalone": "NODE_OPTIONS='--max-old-space-size=5192' env-cmd -f ./.env.production react-scripts build",
     "deploy": "firebase deploy --only hosting",
     "docker:build": "./build-docker.sh",
     "docker:push": "npm run docker:build && docker push gjgd/element-app",
