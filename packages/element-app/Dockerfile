@@ -14,5 +14,3 @@ RUN npm run build:standalone
 
 FROM socialengine/nginx-spa
 COPY --from=build /usr/app/build /app
-# ENTRYPOINT ["/usr/app"]
-# CMD ["npm","run","serve"]
