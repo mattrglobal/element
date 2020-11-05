@@ -1,9 +1,8 @@
 FROM node:10.16 AS base
-EXPOSE 3000
 
 FROM base as deps
 WORKDIR /usr/app
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json .env.production ./
 RUN npm install
 
 FROM base as build
