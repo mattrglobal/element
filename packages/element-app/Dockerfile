@@ -9,6 +9,7 @@ FROM base as build
 WORKDIR /usr/app
 COPY --from=deps /usr/app/node_modules /usr/app/node_modules
 COPY . ./
+COPY .env.production ./
 RUN npm run build:standalone
 
 FROM socialengine/nginx-spa
