@@ -1,5 +1,4 @@
 FROM node:10.16 AS base
-EXPOSE 3000
 
 FROM base as deps
 WORKDIR /usr/app

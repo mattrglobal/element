@@ -28,6 +28,7 @@ const parameters = {
   maxOperationsPerBatch: 10 * 1000,
   batchingIntervalInSeconds: 10,
   didMethodName: 'did:elem:ropsten',
+  logLevel: 'debug',
 };
 
 const sidetree = new element.Sidetree({

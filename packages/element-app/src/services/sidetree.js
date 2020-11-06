@@ -25,6 +25,7 @@ const parameters = {
   maxOperationsPerBatch: 10 * 1000,
   batchingIntervalInSeconds: 10,
   didMethodName: config.DID_METHOD_NAME,
+  logLevel: 'debug',
 };
 
 export const initSidetree = async () => {
