@@ -1,8 +1,9 @@
 FROM node:10.21 as base
+env NODE_ENV=production
 
 FROM base as deps
 WORKDIR /usr/api
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json .runtimeconfig.json ./
 RUN npm install
 
 FROM base as api
