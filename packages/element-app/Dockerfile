@@ -2,7 +2,7 @@ FROM node:10.16 AS base
 
 FROM base as deps
 WORKDIR /usr/app
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json .env.production ./
 RUN npm install
 
 FROM base as build
