@@ -1,0 +1,15 @@
+{
+  "element": {
+    "commit": "ef2bf27759e049b1783b865c88a1a947589c3679",
+    "env": "local",
+    "couchdb_remote": "SECRET",
+    "ipfs": {
+      "multiaddr": "/ip4/127.0.0.1/tcp/5001"
+    },
+    "ethereum": {
+      "anchor_contract_address": "",
+      "provider_url": "http://element.sandbox.mattrlabs.io:8545",
+      "mnemonic": "hazard pride garment scout search divide solution argue wait avoid title cave"
+    }
+  }
+}
