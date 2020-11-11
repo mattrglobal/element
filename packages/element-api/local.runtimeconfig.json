@@ -8,7 +8,7 @@
     },
     "ethereum": {
       "anchor_contract_address": "",
-      "provider_url": "http://element.sandbox.mattrlabs.io:8545",
+      "provider_url": "https://element.sandbox.mattrlabs.io:8545",
       "mnemonic": "hazard pride garment scout search divide solution argue wait avoid title cave"
     }
   }
