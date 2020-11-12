@@ -193,6 +193,7 @@ router.get('/operations/:didUniqueSuffix', async (req, res, next) => {
 router.get('/:did', async (req, res, next) => {
   try {
     const { did } = req.params;
+    console.log(`loading sidetree did...${did}`);
     const sidetree = req.app.get('sidetree');
     const didDocument = await sidetree.resolve(did, true);
     res.status(200).json(didDocument);
