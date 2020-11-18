@@ -14,6 +14,7 @@ const getBaseConfig = () => {
       config = functions.config();
       break;
   }
+  config = require('../../.runtimeconfig.json');
   return config.element;
 };
 
