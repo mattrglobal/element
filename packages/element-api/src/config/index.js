@@ -10,11 +10,12 @@ const getBaseConfig = () => {
 
     case 'development':
     case 'production':
+      config = require('../../.runtimeconfig.json');
+      break;
     default:
       config = functions.config();
       break;
   }
-  config = require('../../.runtimeconfig.json');
   return config.element;
 };
 
