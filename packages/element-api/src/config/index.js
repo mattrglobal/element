@@ -10,6 +10,7 @@ const getBaseConfig = () => {
 
     case 'development':
     case 'production':
+      // eslint-disable-next-line
       config = require('../../.runtimeconfig.json');
       break;
     default:
