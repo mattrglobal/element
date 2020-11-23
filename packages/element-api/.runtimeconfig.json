@@ -8,7 +8,7 @@
     },
     "ethereum": {
       "anchor_contract_address": "0xb10D35f97A146606d331821f6d826d54e6b9DF70",
-      "provider_url": "https://localhost:8545",
+      "provider_url": "http://127.0.0.1:8545",
       "mnemonic": "hazard pride garment scout search divide solution argue wait avoid title cave"
     }
   }
